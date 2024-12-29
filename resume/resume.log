@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.12.30)  30 DEC 2024 10:59
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.12.30)  30 DEC 2024 11:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -995,7 +995,7 @@ t line 23.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/it' will be
 (Font)              scaled to size 9.0pt on input line 23.
 ) (resume/skills.tex
-Overfull \hbox (23.01157pt too wide) in alignment at lines 10--23
+Overfull \hbox (19.99156pt too wide) in alignment at lines 10--28
 [] [] 
  []
 
@@ -1016,7 +1016,7 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 Here is how much of TeX's memory you used:
  32352 strings out of 408683
  650364 string characters out of 5745867
- 1230741 words of memory out of 5000000
+ 1232741 words of memory out of 5000000
  54878 multiletter control sequences out of 15000+600000
  560697 words of font info for 104 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
