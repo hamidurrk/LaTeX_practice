@@ -544,6 +544,17 @@
     \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
   \end{tabular*}%
 }
+\newcommand*{\cventryprojects}[5]{%
+  \vspace{-2.0mm}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+      \entrytitlestyle{#2} \hspace{1.0mm} \entrypositionstyle{#1} & \entrylocationstyle{#3} \\
+      % \entrypositionstyle{#1} & \entrydatestyle{#4} \\
+    \end{tabular*}%
+    \vspace{-1.5mm}
+    \descriptionstyle{#5}
+}
 \newcommand*{\cventryalt}[5]{%
   \vspace{-2.0mm}
   \setlength\tabcolsep{0pt}
@@ -552,8 +563,9 @@
     \entrytitlestyle{#3} & \entrytitlestyle{#2} & \entrytitlestyle{#4} \\
     % \multicolumn{3}{c}{\descriptionstyle{#5}}
   \end{tabular*}%
-  \vspace{-1.0mm}
+  \vspace{-1.5mm}
   \descriptionstyle{#5}
+  \vspace{0.7mm}
 }
 
 % Define an environment for cvsubentry
