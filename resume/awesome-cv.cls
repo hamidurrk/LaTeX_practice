@@ -51,6 +51,7 @@
 %-------------------------------------------------------------------------------
 % Needed to make fixed length table
 \RequirePackage{array}
+\RequirePackage{tabularx}
 % Needed to handle list environment
 \RequirePackage{enumitem}
 % Needed to handle text alignment
@@ -191,14 +192,14 @@
 %-------------------------------------------------------------------------------
 % Configure styles for each CV elements
 % For fundamental structures
-\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{26pt}{1em}\headerfont\color{text} #1}}
-\newcommand*{\headerlastnamestyle}[1]{{\fontsize{26pt}{1em}\headerfont\color{text} #1}}
+\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{18pt}{1em}\headerfont\bfseries\color{text} #1}}
+\newcommand*{\headerlastnamestyle}[1]{{\fontsize{18pt}{1em}\headerfont\bfseries\color{text} #1}}
 \newcommand*{\headerpositionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\scshape\color{awesome} #1}}
 \newcommand*{\headeraddressstyle}[1]{{\fontsize{9pt}{1em}\headerfont\itshape\color{text} #1}}
 \newcommand*{\headersocialstyle}[1]{{\fontsize{10pt}{1em}\headerfont\color{text} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\itshape\color{darktext} #1}}
 \newcommand*{\footerstyle}[1]{{\fontsize{9pt}{1em}\footerfont\scshape\color{text} #1}}
-\newcommand*{\sectionstyle}[1]{{\fontsize{15pt}{1em}\bodyfont\bfseries\color{darktext}\@sectioncolor #1}}
+\newcommand*{\sectionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\scshape\bfseries\color{darktext}\@sectioncolor #1}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{darktext}{#1}}}
 \newcommand*{\paragraphstyle}{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{darktext}}
 
@@ -206,7 +207,7 @@
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\entrypositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\scshape\color{darktext} #1}}
 \newcommand*{\entrydatestyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{darktext} #1}}
-\newcommand*{\entrylocationstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
+\newcommand*{\entrylocationstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\bfseries\color{awesome} #1}}
 \newcommand*{\descriptionstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\upshape\color{darktext} #1}}
 
 % For elements of subentry
@@ -344,7 +345,7 @@
 \newcommand{\acvHeaderAfterQuoteSkip}{5mm}
 
 % Others
-\newcommand{\acvSectionTopSkip}{3mm}
+\newcommand{\acvSectionTopSkip}{1mm}
 \newcommand{\acvSectionContentTopSkip}{.5mm}
 
 
@@ -486,6 +487,42 @@
   \end{minipage}
 }
 
+\newcommand*{\makecvheaderalt}[1][C]{%
+  \newlength{\headertextwidth}
+  \setlength{\headertextwidth}{\textwidth}
+  \setlength{\tabcolsep}{0pt}
+  \begin{minipage}[c]{\headertextwidth}
+    \begin{tabularx}{\textwidth}{Xc>{\raggedleft\arraybackslash}X}
+      % \hline
+      % First column with nested table
+      \begin{tabular}{@{}l@{}}
+        % {\faMap\acvHeaderIconSep\@address} \\
+        \headersocialstyle{\faMobilePhone\acvHeaderIconSep\@mobile} \\
+        % \hline
+        \\
+        % \hline
+        \headersocialstyle{\href{mailto:\@email}{\faEnvelope\acvHeaderIconSep\@email}} \\
+        % \href{mailto:\@email}{\faEnvelope\acvHeaderIconSep\@email} 
+      \end{tabular} &
+      
+      % Middle column with header
+      \begin{tabular}{@{}c@{}}
+        \headerfirstnamestyle{\@firstname}\headerlastnamestyle{{}\acvHeaderNameDelim\@lastname} \\
+      \end{tabular} &
+      
+      % Last column with nested table
+      \begin{tabular}{@{}r@{}}
+        % \hline
+        \headersocialstyle{\href{https://github.com/\@github}{\faGithubSquare\acvHeaderIconSep\@github}} \\
+        % \hline
+        \headersocialstyle{\href{https://www.linkedin.com/in/\@linkedin}{\faLinkedinSquare\acvHeaderIconSep\@linkedin}} \\
+        \headersocialstyle{\href{http://\@homepage}{\faGlobe\acvHeaderIconSep\@homepage}} \\
+      \end{tabular} \\
+      % \hline
+    \end{tabularx}
+  \end{minipage}%
+}
+
 % Define a footer for CV
 % Usage: \makecvfooter{<left>}{<center>}{<right>}
 \newcommand*{\makecvfooter}[3]{%
@@ -501,7 +538,9 @@
   \vspace{\acvSectionTopSkip}
   \sectionstyle{#1}
   \phantomsection
-  \color{darktext}\vhrulefill{0.9pt}
+  % \color{darktext}\vhrulefill{0.9pt}
+  \vspace{0.2em}
+  \hrule
 }
 
 % Define a subsection for CV
