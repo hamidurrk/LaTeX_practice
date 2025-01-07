@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.12.30)  3 JAN 2025 14:22
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.12.30)  7 JAN 2025 20:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -881,11 +881,11 @@ LaTeX Font Info:    ... okay on input line 58.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(28.45274pt, 540.60239pt, 28.45274pt)
-* v-part:(T,H,B)=(22.76228pt, 771.06952pt, 51.21504pt)
+* v-part:(T,H,B)=(22.76228pt, 793.83182pt, 28.45274pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=540.60239pt
-* \textheight=771.06952pt
+* \textheight=793.83182pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
 * \topmargin=-86.5077pt
@@ -963,20 +963,33 @@ LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/sc' will be
 (Font)              scaled to size 10.0pt on input line 4.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
 (Font)              scaled to size 10.0pt on input line 25.
-) (resume/experience.tex)
+) (resume/experience.tex
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00107pt on input line 24.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00075pt on input line 24.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00053pt on input line 24.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 24.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 24.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 24.
+)
 (resume/activities.tex) (resume/projects.tex
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sl' in size <10> not avai
 lable
 (Font)              Font shape `TU/SourceSansPro(1)/m/it' tried instead on inpu
-t line 23.
+t line 31.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 23.
+(Font)              scaled to size 10.0pt on input line 31.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/sl' in size <10> not avai
 lable
 (Font)              Font shape `TU/SourceSansPro(1)/b/it' tried instead on inpu
-t line 23.
+t line 31.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/it' will be
-(Font)              scaled to size 10.0pt on input line 23.
+(Font)              scaled to size 10.0pt on input line 31.
 ) (resume/skills.tex
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
 (Font)              scaled to size 9.0pt on input line 15.
@@ -1000,11 +1013,11 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32412 strings out of 408683
- 651323 string characters out of 5745867
- 1231586 words of memory out of 5000000
- 54935 multiletter control sequences out of 15000+600000
- 560697 words of font info for 104 fonts, out of 8000000 for 9000
+ 32430 strings out of 408683
+ 652130 string characters out of 5745867
+ 1247584 words of memory out of 5000000
+ 54944 multiletter control sequences out of 15000+600000
+ 561282 words of font info for 113 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  131i,17n,135p,600b,430s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
