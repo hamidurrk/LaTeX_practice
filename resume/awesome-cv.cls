@@ -591,7 +591,7 @@
       \entrytitlestyle{#2} \hspace{1.0mm} \entrypositionstyle{#1} & \entrylocationstyle{#3} \\
       % \entrypositionstyle{#1} & \entrydatestyle{#4} \\
     \end{tabular*}%
-    \vspace{-1.5mm}
+    \vspace{-2.0mm}
     \descriptionstyle{#5}
 }
 \newcommand*{\cventryalt}[5]{%
@@ -602,7 +602,7 @@
     \entrytitlestyle{#3} & \entrytitlestyle{#2} & \entrytitlestyle{#4} \\
     % \multicolumn{3}{c}{\descriptionstyle{#5}}
   \end{tabular*}%
-  \vspace{-1.5mm}
+  \vspace{-2.0mm}
   \descriptionstyle{#5}
   \vspace{0.7mm}
 }
