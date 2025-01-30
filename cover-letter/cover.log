@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.12.30)  3 JAN 2025 11:24
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.12.30)  31 JAN 2025 00:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -292,42 +292,12 @@ LaTeX Font Warning: Font shape `TU/phv/m/sc' undefined
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 144.
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--161
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--161
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 161--161
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 161--161
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 161--161
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 161--161
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 161--161
-
- []
-
-
-Overfull \hbox (4.47375pt too wide) in paragraph at lines 161--161
+Overfull \hbox (4.47375pt too wide) in paragraph at lines 162--162
 []$  
  []
 
@@ -348,10 +318,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  4345 strings out of 408683
  67905 string characters out of 5745867
- 567366 words of memory out of 5000000
+ 569366 words of memory out of 5000000
  27333 multiletter control sequences out of 15000+600000
  561777 words of font info for 55 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 65i,5n,79p,572b,275s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 65i,5n,79p,595b,275s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on cover.pdf (1 page).
