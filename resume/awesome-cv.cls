@@ -284,6 +284,9 @@
 % Defines writer's email (optional)
 % Usage: \email{<email adress>}
 \newcommand*{\email}[1]{\def\@email{#1}}
+% Defines writer's second email (optional)
+% Usage: \emailtwo{<email adress>}
+\newcommand*{\emailtwo}[1]{\def\@emailtwo{#1}}
 
 % Defines writer's homepage (optional)
 % Usage: \homepage{<url>}
@@ -417,11 +420,17 @@
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
           \href{mailto:\@email}{\faEnvelope\acvHeaderIconSep\@email}%
         }%
+      \ifthenelse{\isundefined{\@emailtwo}}%
+        {}%
+        {%
+          \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
+          \href{mailto:\@emailtwo}{\faEnvelope\acvHeaderIconSep\@emailtwo}%
+        }%
       \ifthenelse{\isundefined{\@homepage}}%
         {}%
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \href{http://\@homepage}{\faHome\acvHeaderIconSep\@homepage}%
+          \href{https://\@homepage}{\faHome\acvHeaderIconSep\@homepage}%
         }%
       \ifthenelse{\isundefined{\@github}}%
         {}%
@@ -497,9 +506,10 @@
       % First column with nested table
       \begin{tabular}{@{}l@{}}
         % {\faMap\acvHeaderIconSep\@address} \\
-        \headersocialstyle{\faMobilePhone\acvHeaderIconSep\@mobile} \\
         % \hline
-        \\
+        \headersocialstyle{\faMobilePhone\acvHeaderIconSep\@mobile} \\
+        \headersocialstyle{\href{mailto:\@emailtwo}{\faBriefcase\acvHeaderIconSep\@emailtwo}} \\
+        % \href{mailto:\@emailtwo}{\faEnvelope\acvHeaderIconSep\@emailtwo} \\
         % \hline
         \headersocialstyle{\href{mailto:\@email}{\faEnvelope\acvHeaderIconSep\@email}} \\
         % \href{mailto:\@email}{\faEnvelope\acvHeaderIconSep\@email} 
@@ -516,7 +526,7 @@
         \headersocialstyle{\href{https://github.com/\@github}{\faGithubSquare\acvHeaderIconSep\@github}} \\
         % \hline
         \headersocialstyle{\href{https://www.linkedin.com/in/\@linkedin}{\faLinkedinSquare\acvHeaderIconSep\@linkedin}} \\
-        \headersocialstyle{\href{http://\@homepage}{\faGlobe\acvHeaderIconSep\@homepage}} \\
+        \headersocialstyle{\href{https://\@homepage}{\faGlobe\acvHeaderIconSep\@homepage}} \\
       \end{tabular} \\
       % \hline
     \end{tabularx}
@@ -652,7 +662,7 @@
 % Define an environment for cvskill
 \newenvironment{cvskills}{%
   \vspace{\acvSectionContentTopSkip}
-  \vspace{-2.0mm}
+  \vspace{-2.5mm}
   \begin{center}
     \setlength\tabcolsep{1ex}
     \setlength{\extrarowheight}{0pt}
