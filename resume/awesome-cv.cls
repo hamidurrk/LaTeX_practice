@@ -608,7 +608,7 @@
   \vspace{-2.0mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l c r}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{0.33\textwidth} C{0.34\textwidth} R{0.33\textwidth}}
     \entrytitlestyle{#3} & \entrytitlestyle{#2} & \entrytitlestyle{#4} \\
     % \multicolumn{3}{c}{\descriptionstyle{#5}}
   \end{tabular*}%
